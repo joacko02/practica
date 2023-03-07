@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/admin/Downloads/BIBLIOTECA.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="880"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,6:mainlibros"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="libros" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="281"/><column index="3" value="141"/><column index="4" value="88"/><column index="5" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="43"/><column index="2" value="40"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE &quot;libros&quot; (
+	&quot;id:&quot;	INTEGER UNIQUE,
+	&quot;nombre&quot;	TEXT,
+	&quot;autor&quot;	TEXT,
+	&quot;genero&quot; TEXT,
+	&quot;año&quot;	NUMERIC,
+	PRIMARY KEY(&quot;id:&quot; AUTOINCREMENT)
+	);
+
+
+</sql><sql name="SQL 2">SELECT * from libros</sql><sql name="SQL 3">SELECT * FROM libros WHERE autor='Adam Roberts';</sql><sql name="SQL 4">SELECT * FROM libros WHERE genero='Autoayuda';</sql><sql name="SQL 6">SELECT * FROM libros WHERE genero='Autoayuda' LIMIT 5;</sql><sql name="SQL 10">SELECT * FROM libros WHERE genero='Ciencia ficción' and año BETWEEN 1950 and 1980 order by año;
+</sql><sql name="SQL 9">SELECT * FROM libros WHERE año BETWEEN 1900 and 1999;</sql><sql name="SQL 11">SELECT * FROM libros WHERE genero='Ciencia ficción' and autor='Isaac Asimov';</sql><sql name="SQL 12">update libros set genero = 'Donrisas' WHERE genero = 'sonrisas';
+SELECT * FROM libros
+</sql><current_tab id="8"/></tab_sql></sqlb_project>
